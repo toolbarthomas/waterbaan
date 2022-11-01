@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./types",
+    "paths": {
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/core/*": [
+        "./src/core/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+    },
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ],
+    "rootDir": "./src",
+    "strict": true,
+    "types": [
+      "node",
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.styles.ts"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "description": "Proof of Concept boilerplate for Headless Drupal Environments",
+  "main": "index.js",
+  "name": "headless-drupal",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node node/esbuild.serve.mjs",
+    "build": "node node/esbuild.build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "@webcomponents/webcomponentsjs": "^2.7.0",
+    "esbuild": "^0.15.12",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "keywords": [
+    "Drupal",
+    "Headless",
+    "Lit",
+    "JSON"
+  ],
+  "author": "Thomas van der Velde <contact@toolbarthomas.net>",
+  "license": "MIT",
+  "dependencies": {
+    "domready": "^1.0.8",
+    "drupal-jsonapi-params": "^2.1.0",
+    "lit": "^2.4.0"
+  }
+}
